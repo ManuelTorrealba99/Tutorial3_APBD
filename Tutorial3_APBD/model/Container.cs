@@ -5,14 +5,13 @@ public class Container
     public double CargoMass { get; protected set; }
     public int Height { get; }
     public double TareWeight { get; }
-    public double CargoWeight => CargoMass + TareWeight;
     public int Depth { get; }
     public string SerialNumber { get; }
     public double MaxPayload { get; }
 
     private static int serialCounter = 1;
 
-    public Container(int height, double weightTare, int depth, char type, double maxPayload)
+    public Container(int height, double weightTare, int depth, string type, double maxPayload)
     {
         Height = height;
         TareWeight = weightTare;
